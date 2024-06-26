@@ -7,10 +7,71 @@
 This section covers the initial setup and basic functionality of the game.
 
 ### Initial Functionality
+#### Goals:
 - The game allows for a simple yes/no input after each round to continue or end the game.
 - Keeps score of the player's and computer's wins.
 - Displays ASCII art for the player's and computer's choices each round.
 - Organized into modular methods for readability and maintainability.
+
+First let's start to building some basic functionality.  _Working iteratively_, we will start by getting a simple version of the game working.  Let's see how GitHub Copilot can help with a prompt!
+
+Create a directory for the game, in this case ```rps-demo-py```, and create a file within named ```rps.py```
+```
+mkdir rps-demo-py
+cd rps-demo-py/
+touch rps.py
+```
+
+![Lab 1 Directory Structure](./images/LAB1_MKDIR_01.png)
+
+Open the file in your code editor (VS Code is being used in the sample screenshots) and enter a starting prompt:
+
+```
+'''
+Create a Python application that allows a user to play Rock, Paper, Scissors against a computer player.
+'''
+```
+Accept prompts provided, you should receive suggestions similar to the screenshot:
+![Lab_1_Initial_Suggestion](./images/LAB1_INITIAL_01.png)
+
+Test the application for functionality:
+
+![Lab_1_ERROR_MESSAGE_ERROR_01](image.png)
+
+In this case, it produced an error.  This can showcase how we can use GitHub Copilot to help us troubleshoot errors.  The error message can be provided as added information to our context in the prompt:
+
+![Lab_1_ERROR_MESSAGE_FIX_01](image-1.png)
+
+Having implemented Github Copilot's recommended fix, we should now have a working, basic version, of the game:
+
+![Lab_1_WORKING_01](image-2.png)
+
+Consider an alternate prompt with additional information and criteria:
+```
+'''
+Create a Python application that allows a user to play Rock, Paper, Scissors against a computer player. The application should do the following:
+
+1. Display the welcome message.
+2. Prompt the user to enter their name.
+3. Display the rules of the game.
+4. Prompt the user to select Rock, Paper, or Scissors.
+5. Generate a random selection for the computer player.
+6. Display the user's selection and the computer's selection.
+7. Determine the winner of the game.
+8. Display the winner of the game.
+9. Prompt the user to play again.
+10. Display the goodbye message.
+'''
+```
+
+### Add Functionality
+Create prompts to add the following features:
+
+- Prompt user for yes/no prompt after each round
+- Input validation for all user prompts and inputs
+- Add ASCII art for each round and user/computer selection
+- Ask GitHub Copilot to consider breaking into separate methods instead of 1-2 methods to 'rule them all'
+
 
 </details>
 
