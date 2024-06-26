@@ -72,6 +72,25 @@ Create prompts to add the following features:
 - Add ASCII art for each round and user/computer selection
 - Ask GitHub Copilot to consider breaking into separate methods instead of 1-2 methods to 'rule them all'
 
+#### Examples:
+
+Adding Keep Score Mechanic:
+
+![LAB_1_Keep_Score](image-3.png)
+
+Play again after a round:
+
+![LAB_1_Play_Again](image-4.png)
+
+Troubleshooting undesired behavior with play again:
+
+![LAB_1_Play_Again_Error](image-5.png)
+
+ASCII Art:
+
+![LAB_1_ASCII_Art](image-6.png)
+
+
 
 </details>
 
@@ -79,8 +98,40 @@ Create prompts to add the following features:
 <summary><strong>Lab 2</strong></summary>
 
 ## Refactoring
-- The game logic is broken down into classes to better encapsulate functionality and improve code organization.
-- Functionality is verified after refactoring to ensure the game operates as expected.
+Now that we've implemented basic game functionality and added features to enhance the capabilities in line with user and business expectations, we can work on making code more efficient.
+
+In this lab, our goals are to show how GitHub Copilot can assist with these goals:
+- Breaking game logic in to classes to better encapsulate functionality and improve code organization.
+- Ensuring end user functionality remains unchanged after refactoring to ensure the game operates as expected.
+- Plan for future test case scenarios
+
+Prompt:
+```
+Can you help me refactor the program to use classes?  My future use cases will require unit testing of the code, I need to make it more efficient and scalable.  I want the classes to be in separate files and imported/exported appropriately
+```
+
+Output should be similar to the following:
+
+![LAB_2_Refactor_Classes_01](image-7.png)
+
+After refactoring, we can re-test and ensure the program functions as intended:
+
+![LAB_2_Refactor_Test_01](image-8.png)
+
+After refactoring, I noticed that GitHub Copilot said if I wanted to use a project structure it would recommend something different.  Let's ask it what it thinks about re-organizing our files into a project structure...
+
+Prompt:
+```
+If I wanted to use a package structure, how could I store the files to match that?
+```
+
+![LAB_2_Refactor_ProjectStructure_01](image-9.png)
+![LAB_2_Refactor_ProjectStructure_02](image-10.png)
+
+Use copilot to help correct any errors, and don't hesitate to use the ```#file``` switch on your prompts to specifically include certail files.
+Reference GitHub Copilot / commands and # commands with official documentation [here](https://docs.github.com/en/copilot/github-copilot-chat/copilot-chat-in-ides/using-github-copilot-chat-in-your-ide?tool=vscode#slash-commands).
+
+
 
 </details>
 
