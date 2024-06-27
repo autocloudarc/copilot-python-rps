@@ -143,6 +143,30 @@ Reference GitHub Copilot / commands and # commands with official documentation [
 - A testing framework is installed to facilitate automated testing.
 - Testing is thoroughly conducted to troubleshoot and fix errors, ensuring reliability.
 
+```
+I want to implement unit tests for my program to verify the following:
+
+-When a user selects rock and computer selects paper, the computer wins
+-When a user selects rock and computer selects scissors, the user wins
+-When a user selects scissors and computer selects paper, user wins
+-When a user selects scissors and computer selects rock, computer wins
+-When a user selects paper and the computer selects rock, the user wins
+-When a user selects paper and the computer selects scissors, the computer wins
+-When a user and computer select the same item, it is a tie
+
+```
+
+![LAB_3_Unit_Tests_01](image-12.png)
+
+
+We can also ask GitHub Copilot how to run and implement our unit tests:
+
+![LAB_3_Unit_Tests_02](image-11.png)
+
+Testing Results:
+
+![LAB_3_Unit_Test_Results_03](image-13.png)
+
 </details>
 
 <details>
